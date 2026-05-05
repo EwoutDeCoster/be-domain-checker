@@ -1,7 +1,7 @@
 # .be Domain Checker for Home Assistant
 
 <p align="center">
-  <img src="logo.png" alt=".be Domain Checker Logo" width="200" height="200" />
+  <img src="https://raw.githubusercontent.com/EwoutDeCoster/be-domain-checker/main/logo.png" alt=".be Domain Checker Logo" width="200" height="200" />
 </p>
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
