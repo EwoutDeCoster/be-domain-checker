@@ -1,5 +1,9 @@
 # .be Domain Checker for Home Assistant
 
+<p align="center">
+  <img src="logo.png" alt=".be Domain Checker Logo" width="200" height="200" />
+</p>
+
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
 
 Een op maat gemaakte Home Assistant custom integratie (volledig geschikt voor HACS) die de status van `.be` domeinnamen controleert door rechtstreeks de officiële WHOIS-server van DNS Belgium te bevragen. Dit gebeurt zonder externe Python-bibliotheken (via sockets), waardoor het razendsnel en uiterst betrouwbaar is op alle Home Assistant-platformen (zoals Raspberry Pi, Home Assistant OS, Docker, etc.).
