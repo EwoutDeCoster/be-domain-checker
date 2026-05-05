@@ -1,0 +1,20 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure .be Domain Checker",
+        "description": "Enter the .be domain name and update interval (in minutes) you want to monitor.",
+        "data": {
+          "domain": "Domain Name",
+          "update_interval": "Update Interval (minutes)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to WHOIS server"
+    },
+    "abort": {
+      "already_configured": "Domain is already being monitored"
+    }
+  }
+}

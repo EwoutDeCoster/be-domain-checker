@@ -1,0 +1,20 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configureer .be Domain Checker",
+        "description": "Voer de .be domeinnaam en het update-interval (in minuten) in die je wilt controleren.",
+        "data": {
+          "domain": "Domeinnaam",
+          "update_interval": "Update-interval (minuten)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kan geen verbinding maken met de WHOIS-server"
+    },
+    "abort": {
+      "already_configured": "Dit domein wordt al gecontroleerd"
+    }
+  }
+}
