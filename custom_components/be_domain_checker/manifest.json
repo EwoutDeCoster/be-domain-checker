@@ -1,9 +1,11 @@
 {
   "domain": "be_domain_checker",
   "name": ".be Domain Checker",
-  "codeowners": ["@ewoutdc"],
+  "codeowners": [
+    "@EwoutDeCoster"
+  ],
   "config_flow": true,
-  "documentation": "https://github.com/ewoutdc/be_domain_checker",
+  "documentation": "https://github.com/EwoutDeCoster/be-domain-checker",
   "iot_class": "cloud_polling",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

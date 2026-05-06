@@ -16,5 +16,16 @@
     "abort": {
       "already_configured": "Domain is already being monitored"
     }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configure .be Domain Checker Options",
+        "description": "Change the update interval for this domain.",
+        "data": {
+          "update_interval": "Update Interval (minutes)"
+        }
+      }
+    }
   }
 }

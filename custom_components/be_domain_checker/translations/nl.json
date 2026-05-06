@@ -16,5 +16,16 @@
     "abort": {
       "already_configured": "Dit domein wordt al gecontroleerd"
     }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configureer .be Domain Checker Opties",
+        "description": "Pas het controle-interval aan voor dit domein.",
+        "data": {
+          "update_interval": "Update-interval (minuten)"
+        }
+      }
+    }
   }
 }
