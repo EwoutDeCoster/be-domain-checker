@@ -9,6 +9,7 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
+import homeassistant.util.dt as dt_util
 
 from .const import (
     DOMAIN,
@@ -149,8 +150,6 @@ class BeDomainCoordinator(DataUpdateCoordinator[dict[str, str]]):
                         "status": status,
                     },
                 )
-
-            import homeassistant.util.dt as dt_util
 
             self.last_status = status
             return {
