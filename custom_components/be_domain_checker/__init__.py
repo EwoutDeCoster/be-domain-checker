@@ -150,10 +150,13 @@ class BeDomainCoordinator(DataUpdateCoordinator[dict[str, str]]):
                     },
                 )
 
+            import homeassistant.util.dt as dt_util
+
             self.last_status = status
             return {
                 "status": status,
                 "domain": self.domain_name,
+                "last_checked": dt_util.utcnow().isoformat(),
             }
         except Exception as err:
             raise UpdateFailed(f"Error communicating with WHOIS server: {err}")

@@ -25,6 +25,7 @@ class BeDomainSensor(CoordinatorEntity[BeDomainCoordinator], SensorEntity):
     """Representation of a .be Domain Checker sensor."""
 
     _attr_icon = "mdi:dns"
+    _attr_force_update = True
 
     def __init__(self, coordinator: BeDomainCoordinator) -> None:
         """Initialize the sensor."""
@@ -42,6 +43,9 @@ class BeDomainSensor(CoordinatorEntity[BeDomainCoordinator], SensorEntity):
     @property
     def extra_state_attributes(self) -> dict[str, str]:
         """Return the state attributes."""
+        if not self.coordinator.data:
+            return {"domain": self.coordinator.domain_name}
         return {
             "domain": self.coordinator.domain_name,
+            "last_checked": self.coordinator.data.get("last_checked"),
         }
