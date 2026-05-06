@@ -18,7 +18,7 @@ STEP_USER_DATA_SCHEMA = vol.Schema(
     {
         vol.Required(CONF_DOMAIN): str,
         vol.Required(CONF_UPDATE_INTERVAL, default=DEFAULT_UPDATE_INTERVAL): vol.All(
-            vol.Coerce(int), vol.Range(min=1)
+            vol.Coerce(int), vol.Range(min=5)
         ),
     }
 )
@@ -89,7 +89,7 @@ class BeDomainOptionsFlowHandler(config_entries.OptionsFlow):
         schema = vol.Schema(
             {
                 vol.Required(CONF_UPDATE_INTERVAL, default=current_interval): vol.All(
-                    vol.Coerce(int), vol.Range(min=1)
+                    vol.Coerce(int), vol.Range(min=5)
                 ),
             }
         )
